@@ -1,2 +1,1 @@
-# node-but-in-docker
-# node-but-in-docker
+Instead of having to install node and npm on your local machine, place the scripts in this repo into your `/usr/local/bin` folder. Then you can run `node` or `npm` as normal, but it will spin up a new docker container.
