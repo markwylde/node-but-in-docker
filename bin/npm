@@ -1,0 +1,6 @@
+docker run -it -w /app \
+    -v `pwd`:/app \
+    -v $HOME/.node_modules:/usr/local/lib/node_modules \
+    -v /usr/local/lib/node_modules/npm \
+    $ARGS \
+    npm $@
