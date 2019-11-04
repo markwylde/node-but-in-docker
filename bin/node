@@ -4,5 +4,6 @@ docker run -it -w /app \
     -v $HOME/.node_modules:/usr/local/lib/node_modules \
     -v /usr/local/lib/node_modules/npm \
     --user $(id -u):$(id -g) \
+    --net host \
     $ARGS \
     node node $@
