@@ -6,4 +6,4 @@ docker run -it -w /app \
     --user $(id -u):$(id -g) \
     --net host \
     $ARGS \
-    npm $@
+    node npm $@
