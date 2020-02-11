@@ -2,6 +2,7 @@ docker run -it -w /app \
     --rm \
     -v `pwd`:/app \
     -v $HOME/.node_modules:/usr/local/lib/node_modules \
+    -v $HOME/.npm:/.npm \
     -v /usr/local/lib/node_modules/npm \
     --user $(id -u):$(id -g) \
     --net host \
